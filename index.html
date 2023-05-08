@@ -1,0 +1,73 @@
+<!DOCTYPE html=5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fer</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!---->
+</head>
+
+<body>
+    <canvas class="background"></canvas>
+    <div class="container "> 
+        <main>
+            <div data-pushbar-id="Proximamente" data-pushbar-direction="right">
+                <button data-pushbar-close>X</button> 
+                <div class="listaProximamente">
+                    <ul>navbar</ul>
+                    <ul>proyectos</ul>
+                    <ul>scroll up button</ul> 
+                </div>
+            </div>
+            <button class="btnPush" data-pushbar-target="Proximamente">Proximamente</button> 
+            <header>
+                <h1>Fernando Brandán</h1>
+                <div class="btn">
+                    <button class="scroll"><span>Contacto</span></button>
+                    <button class="pdf"><span>Descargar cv</span></button>
+                </div>
+            </header>
+        </main>
+        
+        <section class="proy">
+            proyectos
+        </section>
+        <section class="proy">
+            sobremi
+        </section>
+        <section>
+            <div class="form" autocomplete="off">
+                <input type="text" name="name" id="" placeholder="Nombre">
+                <input type="email" name="email" id="" placeholder="Email">
+                <input type="text" name="asunto" id="" placeholder="Asunto">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button class="submit"><span>Enviar</span></button>
+            </div>
+        </section>
+    </div>
+    <!--  Script  -->
+    <footer id="footer"> Fernando Brandán - Software developer<br><br><a href="">Linkedin</a></footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+        pushbar.open('Proximamente');
+        pushbar.close();	
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>
